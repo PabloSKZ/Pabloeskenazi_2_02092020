@@ -1,3 +1,24 @@
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 3%;
+}
+
+header nav {
+    width: 30%;
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
 }
