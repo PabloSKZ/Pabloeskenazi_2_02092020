@@ -128,6 +128,7 @@ header nav a:link, a:visited{
     background-color: white;
     border-radius: 30px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px #aaaaaa;
 }
 
 .card img {
@@ -191,16 +192,57 @@ header nav a:link, a:visited{
 .activities {
     margin-left: 3%;
     padding: 2%;
-    max-width: 80vh;
+/*     max-height: 50vh; */
 }
 
 .activities .card {
-    width: 20%;
+    margin: 4%;
+    height: auto;
+    border: none;
 }
 
 .activities img {
-    height: 100%;
-    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 155vh;
+}
+
+.item-a {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+.item-b {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.item-c {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+}
+
+.item-d {
+    grid-column: 3 / 4;
+    grid-row: 1 / 6;
+}
+
+.item-e {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.item-f {
+    grid-column: 4 / 5;
+    grid-row: 3 / 6;
 }
 
 .full-star {
