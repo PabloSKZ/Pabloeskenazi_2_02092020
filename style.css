@@ -55,7 +55,7 @@ header nav a:link, header a:visited{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
-        height: 17vh;
+        height: 120px;
         margin: 5%;
     }
     .signup {
@@ -272,6 +272,11 @@ main {
     cursor: pointer;
 }
 
+#hebergements .card-text h3, #hebergements .card-text p  {
+    margin: 10px;
+    margin-left: 0;
+}
+
 /* Main - Populaire */
 
 .popular {
@@ -323,6 +328,10 @@ main {
     border-top-left-radius: 30px;
 }
 
+#activities h3 {
+    margin: 8px;
+}
+
 .activities-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -363,6 +372,34 @@ main {
     grid-row: 4 / 7;
 }
 
+/* Responsive Main: Small Screens */
+
+@media only screen and (max-width: 1750px) {
+    .cards {
+        justify-content: center;
+    }
+
+    #hebergements .card {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1465px) {
+    .card-text {
+        scale: 0.9;
+    }
+
+    .popular .card-text h3, .popular .card-text p  {
+        margin: 8px;
+        margin-left: 0;
+    }
+
+    #activities h3 {
+        margin: 3px;
+    }
+}
+
+
 /* Responsive Main: Tablet and Phones */
 
 @media only screen and (max-width: 1000px) {
@@ -375,6 +412,10 @@ main {
         width: 90%;
     }
 
+    .popular .card {
+        height: 120px;
+    } 
+
     #hebergements {
         width: 90%;
         background: white;
@@ -383,6 +424,7 @@ main {
 
     #hebergements .card {
         width: 90%;
+        max-height: 200px;
     }
 
     .activities-grid {
@@ -392,11 +434,15 @@ main {
 
     #activities .card {
         width: 90%;
-        height: 25vh;
+        height: 200px;
     }
 
     #activities .card img {
-        height: 15vh;
+        height: 150px;
+    }
+
+    #activities h3 {
+        margin: 10px;
     }
 
     .card-text {
@@ -410,6 +456,10 @@ main {
     #hebergements .card-text h3, #hebergements .card-text p  {
         margin: 8px;
         margin-left: 0;
+    }
+
+    .item-c img {
+        height: 150px !important;
     }
 }
 
